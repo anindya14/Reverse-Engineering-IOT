@@ -21,4 +21,4 @@ Testing for Encryption vs Compression
    
    As you can see, gzip has extreme differences between expected and observed data randomness, making it easy to identify. LZMA is much closer to the AES and 3DES encryption results, but still shows significant variations, particularly on the chi square distribution.
    
-   Using these tests, we can usually determine if an unknown block of data is encrypted or compressed and proceed with any further analysis accordingly
+   Using these tests, we can usually determine if an unknown block of data is encrypted or compressed and proceed with any further analysis accordingly.
