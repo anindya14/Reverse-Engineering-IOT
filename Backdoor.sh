@@ -1,4 +1,4 @@
-#Add path to this file to the startup script which is generally /etc/init.d/rcS
+#Add path to this file to the startup script which is generally /etc/init.d/rcS  ** MAKE Backdoor.sh executable before building image
 #!/bin/sh
 
 #checking internet
