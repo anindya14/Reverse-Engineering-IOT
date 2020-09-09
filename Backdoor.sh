@@ -1,3 +1,4 @@
+#Add path to this file to the startup script which is generally /etc/init.d/rcS
 #!/bin/sh
 
 #checking internet
