@@ -2,18 +2,25 @@
 
 2. check the filesystem and extract the squashfs or jffs2 filesystems to get the rootfs 
 
-3. modify the extracted-sqashfs filesystem and pack it with unsquashfs. To pack first check the compression type of the original squashfs file
+3. modify the extracted-sqashfs filesystem and pack it with unsquashfs. 
 
-command to check is - unsquashfs -s squashfs-file
+To unpack we use unquashfs -d destination-file squashfs-file   OR just unsquashfs imagefile
 
+4. To unpack the jffs2 file use "jefferson"
 
+command - jefferson -d destination-file jffs2-file OR jefferson jffs2-file
 
+5. Packing squashfs 
 
+To pack first check the compression type of the original squashfs file command to check is - unsquashfs -s squashfs-file
 
+Use the above values and make the squashfs file using tool "mksquashfs"
 
+Command - mksquashfs squashfs_unpacked/ squashfs_new -comp xz -b 131072
 
+value of comp i.e compression and -b i.e block-size can be obtained from "unsquashfs -s squashfs-file". Here xz is a type of compression.
 
-
+6. Pack the firmware with the custom script... Here we pack the filesystems without the image header as  we will make it in next step.
 
 
 7. make the header image for the firmware using "mkimage" tool
