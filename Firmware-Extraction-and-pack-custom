@@ -20,6 +20,10 @@ Command - mksquashfs squashfs_unpacked/ squashfs_new -comp xz -b 131072
 
 value of comp i.e compression and -b i.e block-size can be obtained from "unsquashfs -s squashfs-file". Here xz is a type of compression.
 
+6. Packing JFFS2
+
+command - mkfs.jffs2 -r jffs2-extracted-directory -o jffs2-output-directory
+
 6. Pack the firmware with the custom script... Here we pack the filesystems without the image header as  we will make it in next step.
 
 
