@@ -1,0 +1,26 @@
+1. Extract firmware with custom script
+
+2. check the filesystem and extract the squashfs or jffs2 filesystems to get the rootfs 
+
+3. modify the extracted-sqashfs filesystem and pack it with unsquashfs. To pack first check the compression type of the original squashfs file
+
+command to check is - unsquashfs -s squashfs-file
+
+
+
+
+
+
+
+
+
+
+
+7. make the header image for the firmware using "mkimage" tool
+
+eg -  mkimage -A ARM -O linux -T firmware -C none -a 0 -e 0 -n Linux-2.6.35.8 -d demo_backdoored.bin demo_image.bin
+
+
+values of -A , -O ,-n are found when we do a binwalk on the image header found while extraction
+demo_backdoored.bin   -- Image to be signed 
+demo_image.bin        -- Output signed image
