@@ -24,6 +24,8 @@ value of comp i.e compression and -b i.e block-size can be obtained from "unsqua
 
 command - mkfs.jffs2 -r jffs2-extracted-directory -o jffs2-output-directory
 
+Reference - https://linuxlink.timesys.com/docs/wiki/engineering/HOWTO_Create_JFFS2_Images
+
 6. Pack the firmware with the custom script... Here we pack the filesystems without the image header as  we will make it in next step.
 
 
