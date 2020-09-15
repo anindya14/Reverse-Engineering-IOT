@@ -1,0 +1,7 @@
+dd if=ras skip=806847 of=something.lzma bs=1 count=1938004
+
+
+lzma -d < something.lzma > something        #this would say that the lzma: (stdin): Compressed data is corrupt... But thats ok
+
+
+
