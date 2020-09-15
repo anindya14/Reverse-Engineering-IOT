@@ -1,3 +1,5 @@
+#Reference Video - https://www.youtube.com/watch?v=hV8W4o-Mu2o&list=PLniOzp3l9V80YBUmIEOG4HYxEbkixOB7T
+
 1. Extract firmware with custom script
 
 2. check the filesystem and extract the squashfs or jffs2 filesystems to get the rootfs 
