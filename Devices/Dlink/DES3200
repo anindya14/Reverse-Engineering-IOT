@@ -1,9 +1,14 @@
- 1. Firmware is encrypted hence no output in binwalk
+ 1. Firmware is LZMA compressed
+ Extracted first Lzma compressed part with custom script 
  
- binwalk -t DES3200_RUNTIME_V4.05.004.had 
+ 2. Unlzma the file to find some details 
+ 
+ eCos RTOS string reference: "ECOS"
+ 
+ Broadcom 96345 firmware header, header size: 256, firmware version: "IPC6", ~CRC32 header checksum: 0x6C000000, ~CRC32 data checksum: 0x20646973
+ 
 
-DECIMAL       HEXADECIMAL     DESCRIPTION
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+firmware version: "udes", board id: " tunneled",
 
-
-
+VxWorks WIND kernel version "2.11"
+CRC32 polynomial table, big endian
