@@ -1,0 +1,6 @@
+*Dealing with broadcom headers 
+
+Repository that helped me extract Broadcom firmware 
+BCM Image Editor - https://github.com/BigNerd95/bcmImageEditor.git
+
+It helps specially in crafting the special Broadcom header
