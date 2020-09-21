@@ -34,8 +34,13 @@ Reference - https://linuxlink.timesys.com/docs/wiki/engineering/HOWTO_Create_JFF
 7. make the header image for the firmware using "mkimage" tool
 
 eg -  mkimage -A ARM -O linux -T firmware -C none -a 0 -e 0 -n Linux-2.6.35.8 -d demo_backdoored.bin demo_image.bin
+      mkimage -A mips -O linux -T firmware -C none 
 
 
 values of -A , -O ,-n are found when we do a binwalk on the image header found while extraction
 demo_backdoored.bin   -- Image to be signed 
 demo_image.bin        -- Output signed image
+
+To check details of any command of mkimage do 
+      EG - mkimage -C -h #We can get all the options for -C 
+      
