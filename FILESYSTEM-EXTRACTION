@@ -1,0 +1,10 @@
+#Lzma
+
+lzma -d filename.lzma often gives corrupt error and that is because The error found is due to 
+LZMA Utils having been superseded by XV Utils, which don't ignore the trailing garbage. 
+If you use it as a stream (like I gave you), you'll still have the corruption error message in the end, but you'll get your file alright.
+and wont work for that use the following command
+
+lzma -d < filename.lzma > filename
+
+
