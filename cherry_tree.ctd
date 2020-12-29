@@ -1,0 +1,1293 @@
+<?xml version="1.0" ?>
+<cherrytree>
+	<node custom_icon_id="0" foreground="" is_bold="False" name="8901n v3" prog_lang="custom-colors" readonly="False" tags="" unique_id="1">
+		<rich_text>Boot - loader - Bootbase
+
+</rich_text>
+		<node custom_icon_id="0" foreground="" is_bold="False" name="nmap" prog_lang="custom-colors" readonly="False" tags="" unique_id="2">
+			<rich_text>nmap -sV 192.168.1.1  -Pn -p- -T3
+
+Starting Nmap 7.60 ( </rich_text>
+			<rich_text link="webs https://nmap.org">https://nmap.org</rich_text>
+			<rich_text> ) at 2020-07-13 12:44 IST
+Nmap scan report for _gateway (192.168.1.1)
+Host is up (0.0048s latency).
+Not shown: 65531 closed ports
+PORT     STATE SERVICE    VERSION
+21/tcp   open  ftp        Netgear broadband router or ZyXel VoIP adapter ftpd 1.0
+23/tcp   open  telnet     syn-ack Netgear broadband router or ZyXel VoIP adapter telnetd
+80/tcp   open  upnp
+7547/tcp open  upnp
+
+
+
+
+
+
+nmap -A 192.168.1.1  -Pn -p80
+
+Starting Nmap 7.60 ( </rich_text>
+			<rich_text link="webs https://nmap.org">https://nmap.org</rich_text>
+			<rich_text> ) at 2020-07-13 13:02 IST
+Nmap scan report for 192.168.1.1
+Host is up (0.00066s latency).
+
+PORT   STATE SERVICE VERSION
+80/tcp open  upnp
+| fingerprint-strings: 
+|   FourOhFourRequest: 
+|     HTTP/1.1 200 OK
+|     Content-Type: text/html
+|     Date: Sat, 01 Jan 2000 01:12:14 GMT
+|     Expires: Thu, 26 Oct 1995 00:00:00 GMT
+|     Last-Modified: Sat, 01 Jan 2000 01:12:14 GMT
+|     Pragma: no-cache
+|     Server: WebServer/1.0 UPnP/1.0
+|     &lt;html&gt;&lt;head&gt;
+|     &lt;meta http-equiv='content-type' content='text/html;charset=iso-8859-1'&gt;
+|     &lt;title&gt;Web Configurator&lt;/title&gt;
+|     &lt;SCRIPT src=&quot;General.jjss&quot;&gt;&lt;/SCRIPT&gt;
+|     &lt;/head&gt;
+|     &lt;body bgcolor=&quot;#ffffff&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; &gt;
+|     &lt;FORM METHOD=&quot;POST&quot; ACTION=&quot;/Forms/error_1&quot; name=&quot;Errorform&quot;&gt; &lt;table width=&quot;100%&quot; border=&quot;0&quot; cellspacing=&quot;1&quot; bgcolor=&quot;#ffffff&quot;&gt;
+|     &lt;tr&gt;
+|     width=&quot;2%&quot;&gt;&amp;nbsp;&lt;/td&gt;&lt;td width=&quot;5%&quot;&gt;&amp;nbsp;&lt;/td&gt;&lt;td width=&quot;93%&quot; bgcolor=&quot;#ffffff&quot;&gt; 
+|     &lt;table border=&quot;0&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot; width=&quot;560&quot; bgcolor=&quot;#ffffff&quot;&gt;
+|     bgcolor=&quot;#ffffff&quot;&gt; 
+|     colspan=&quot;4&quot; bgcolor=&quot;#ffffff&quot;&gt; 
+|     &lt;div align=left class=&quot;NaviText&quot;&gt;Err
+|   GetRequest: 
+|     HTTP/1.1 302 Found
+|     Location: </rich_text>
+			<rich_text link="webs http://0.0.0.0/login_security.html">http://0.0.0.0/login_security.html</rich_text>
+			<rich_text>
+|     Content-Length: 0
+|     Server: WebServer/1.0 UPnP/1.0
+|   HTTPOptions, RTSPRequest, SIPOptions: 
+|     HTTP/1.1 405 Method Not Allowed
+|     Allow: GET, HEAD, POST, PUT
+|     Content-Length: 0
+|_    Server: WebServer/1.0 UPnP/1.0
+| http-methods: 
+|_  Potentially risky methods: PUT
+|_http-server-header: WebServer/1.0 UPnP/1.0
+| http-title: Site doesn't have a title (text/html).
+|_Requested resource was </rich_text>
+			<rich_text link="webs http://192.168.1.1/login_security.html">http://192.168.1.1/login_security.html</rich_text>
+			<rich_text>
+
+
+nmap -A 192.168.1.1  -Pn -p7547
+
+Starting Nmap 7.60 ( </rich_text>
+			<rich_text link="webs https://nmap.org">https://nmap.org</rich_text>
+			<rich_text> ) at 2020-07-13 13:42 IST
+Nmap scan report for 192.168.1.1
+Host is up (0.00071s latency).
+
+PORT     STATE SERVICE VERSION
+7547/tcp open  upnp
+| fingerprint-strings: 
+|   FourOhFourRequest: 
+|     HTTP/1.1 404 Not Found
+|     Content-Type: text/html
+|     Server: WebServer/1.0 UPnP/1.0
+|     &lt;html&gt;
+|     &lt;head&gt;
+|     &lt;title&gt;Object Not Found&lt;/title&gt;&lt;/head&gt;&lt;body&gt;
+|     &lt;h1&gt;Object Not Found&lt;/h1&gt;The requested URL '/error.html' was not found on the Server.&lt;p&gt;Return to &lt;A HREF=&quot;&quot;&gt;last page&lt;/A&gt;&lt;p&gt;
+|     &lt;/body&gt;&lt;/html&gt;
+|   GetRequest: 
+|     HTTP/1.1 404 Not Found
+|     Content-Type: text/html
+|     Server: WebServer/1.0 UPnP/1.0
+|     &lt;html&gt;
+|     &lt;head&gt;
+|     &lt;title&gt;Object Not Found&lt;/title&gt;&lt;/head&gt;&lt;body&gt;
+|     &lt;h1&gt;Object Not Found&lt;/h1&gt;The requested URL '/' was not found on the Server.&lt;p&gt;Return to &lt;A HREF=&quot;&quot;&gt;last page&lt;/A&gt;&lt;p&gt;
+|     &lt;/body&gt;&lt;/html&gt;
+|   HTTPOptions, RTSPRequest, SIPOptions: 
+|     HTTP/1.1 405 Method Not Allowed
+|     Allow: GET, HEAD, POST, PUT
+|     Content-Length: 0
+|_    Server: WebServer/1.0 UPnP/1.0
+</rich_text>
+		</node>
+	</node>
+	<node custom_icon_id="0" foreground="" is_bold="False" name="TMUX commands" prog_lang="custom-colors" readonly="False" tags="" unique_id="18">
+		<rich_text>
+1. </rich_text>
+		<rich_text scale="h3">Start a new session with the name mysession</rich_text>
+		<rich_text>
+        tmux new -s mysession
+
+</rich_text>
+		<rich_text scale="h3">2. Split pane vertically</rich_text>
+		<rich_text>
+
+             Ctrl + b %
+             
+</rich_text>
+		<rich_text scale="h3">3. Split pane horizontally</rich_text>
+		<rich_text>
+        Ctrl + b  &quot;
+
+4.  Kill session when attached 
+     Ctrl + b x and then type y and press enter
+5. </rich_text>
+	</node>
+	<node custom_icon_id="0" foreground="" is_bold="False" name="MIKROTEK- ROUTEROS" prog_lang="custom-colors" readonly="False" tags="" unique_id="13">
+		<rich_text>firmware is an iso file
+
+general extraction gives a bunch of npk files
+
+these are different for different services
+
+Firmware upgrade is a challenge
+
+
+Histtory of Router OS
+
+3.22 verification ans signing added
+
+checksum/signature checked by /nova/bin/installer
+
+6.30 - sha1 added to npk files  
+
+62 top level commands in routeros
+
+
+NPK File 
+
+header + file size + parts + footer
+
+
+Header - 1E F1 D0 BA
+
+footer - 10 00 01 00 00 00 
+
+     footer since 3.22
+</rich_text>
+		<node custom_icon_id="0" foreground="" is_bold="False" name="npk-file" prog_lang="custom-colors" readonly="False" tags="" unique_id="14">
+			<rich_text>main File -  routeros-simps-mod.npk
+
+Squashfs filesystem, 
+little endian, version 4.0, 
+compression:xz, 
+size: 6343456 bytes,
+943 inodes,
+blocksize: 262144 bytes
+
+</rich_text>
+		</node>
+		<node custom_icon_id="43" foreground="#000000" is_bold="True" name="findings" prog_lang="custom-colors" readonly="False" tags="" unique_id="26">
+			<rich_text>RouterOS - V6.44.3
+No authorization needed - 
+
+http://192.168.88.1/webfig/</rich_text>
+			<rich_text weight="heavy">uploader.html    </rich_text>
+			<rich_text>
+
+
+
+RouterOS DNS Cache Poisoning to RouterOS Downgrade - </rich_text>
+			<rich_text link="webs https://www.youtube.com/watch?v=5SW7z0eUDuA&amp;feature=emb_logo">https://www.youtube.com/watch?v=5SW7z0eUDuA&amp;feature=emb_logo</rich_text>
+			<rich_text>
+
+</rich_text>
+		</node>
+		<node custom_icon_id="0" foreground="#841c1c" is_bold="True" name="Getting-shell" prog_lang="custom-colors" readonly="False" tags="" unique_id="27">
+			<rich_text>1. Create /nova/etc/devel-login    (how to create file in mikrotik)
+2. telnet to 192.168.88.1 as devel</rich_text>
+		</node>
+	</node>
+	<node custom_icon_id="0" foreground="" is_bold="False" name="mount-study" prog_lang="custom-colors" readonly="False" tags="" unique_id="11">
+		<rich_text>
+Create a file with dd -----
+
+dd if=/dev/zero of=xyz-file bs=1M count=200 
+
+note* - File size is 200Mb
+
+1. To check attached files in loop devices
+
+losetup -a
+
+2. To attach xyz-file to loop device
+
+losetup /dev/loop0 xyz-file
+
+3.  create a folder for mounting 
+
+4. Format /dev/loop0 partition
+
+mkfs.ext3 /dev/loop0
+
+5. Mount loop partition to the folder created earlier
+
+mount /dev/loop0 folder-path
+
+
+</rich_text>
+	</node>
+	<node custom_icon_id="0" foreground="" is_bold="False" name="Auth-bypass study" prog_lang="custom-colors" readonly="False" tags="" unique_id="8">
+		<rich_text></rich_text>
+		<node custom_icon_id="0" foreground="" is_bold="False" name="Defcon-26-Orange_Tsai" prog_lang="custom-colors" readonly="False" tags="" unique_id="9">
+			<rich_text>Inconsistency can lead to auth bypass
+
+inconsistency in check(data) and use(data)
+
+Inconsistency benween URL passes and URL fetches lead to SSI bypass
+
+Park inconsistency  ???? 
+
+Path Normalization</rich_text>
+		</node>
+		<node custom_icon_id="0" foreground="" is_bold="True" name="BlackHat 2015 | Using static binary analysis " prog_lang="custom-colors" readonly="False" tags="" unique_id="15">
+			<rich_text>1. Find Authentication routine to bypass authentication -
+
+In some cases the authentication routine cant be found 
+
+
+Finding 1 - Its easier to check the authenticated state than to find and check the authentication routine
+
+Solution is </rich_text>
+			<rich_text weight="heavy">Input Determinism</rich_text>
+			<rich_text> --- In this we can determine the input needed to reach the success function, just by analyzing the code
+
+
+# ANGR - A binary Analysis Framework
+
+1. Binary Loader
+
+2. Symbolic Execution Engine
+
+3. Static Analysis Routines
+     a. Control-flow graph
+     b. Data-flow Analysis
+     c. Value-set Analysis
+
+
+
+
+Installing ANGR - sudo apt-get install python-dev libffi-dev essential libqt4-dev graphviz-de
+
+pip install angr
+
+</rich_text>
+		</node>
+	</node>
+	<node custom_icon_id="0" foreground="" is_bold="False" name="825G1" prog_lang="custom-colors" readonly="False" tags="" unique_id="6">
+		<rich_text>=~=~=~=~=~=~=~=~=~=~=~= PuTTY log 2020.09.14 14:42:24 =~=~=~=~=~=~=~=~=~=~=~=
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@
+@ chip__no chip__id mfr___id dev___id cap___id size_sft dev_size chipSize
+@ 0000000h 0ef4017h 00000efh 0000040h 0000017h 0000000h 0000017h 0800000h
+@ blk_size blk__cnt sec_size sec__cnt pageSize page_cnt chip_clk chipName
+@ 0010000h 0000080h 0001000h 0000800h 0000100h 0000010h 000002dh W25Q64
+@ 
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+CONFIG_LAN_WAN_ISOLATION=1
+  RTL8367R initialized.
+nvram: invalid sign
+ header to:0x805ffff0, len:8Vno rootfs signature at 000F0000!
+no rootfs signature at 00130000!
+no rootfs signature at 00100000!
+no rootfs signature at 00110000!
+no rootfs signature at 00120000!
+no rootfs signature at 00140000!
+no rootfs signature at 00150000!
+no rootfs signature at 00160000!
+no rootfs signature at 00170000{36K;s+no rootfs signature at 00190000!
+no rootfs signature at 001A0000!
+no rootfs signature at 001B0000!
+no rootfs signature at 001C0000!
+no rootfs signature at 001D0000!
+no rootfs signature at 001E0000!
+no rootfs signature at 001F0000!
+skip rootfs checksum
+Jump to image start=0x80600000...
+decompressing kernel:
+Uncompressing Linux... done, booting the kernel.
+done decompressing kernel.
+start address: 0x80003a50
+Linux version 3.10.90 (builder@rd) (gcc version 4.4.5-1.5.5p4 (GCC) ) #1 Thu May 21 14:55:16 MSK 2020
+CPU revision is: 0000dc02
+Determined physical RAM map:
+ memory: 04000000 @ 00000000 (usable)
+Zone ranges:
+  Normal   [mem 0x00000000-0x03ffffff]
+Movable zone start for each node
+Early memory node ranges
+  node   0: [mem 0x00000000-0x03ffffff]
+icache: 64kB/32B, dcache: 32kB/32B, scache: 0kB/0B
+Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 16256
+Kernel command line: console=ttyS0,38400 root=31:04 init=/sbin/init
+PID hash table entries: 256 (order: -2, 1024 bytes)
+Dentry cache hash table entries: 8192 (order: 3, 32768 bytes)
+Inode-cache hash table entries: 4096 (order: 2, 16384 bytes)
+Memory: 37672k/65536k available (4368k kernel code, 27864k reserved, 1270k data, 184k init, 0k highmem)
+SLUB: HWalign=32, Order=0-3, MinObjects=0, CPUs=1, Nodes=1
+NR_IRQS:128
+console [ttyS0] enabled
+Calibrating delay loop... 657.81 BogoMIPS (lpj=3289088)
+pid_max: default: 4096 minimum: 301
+Mount-cache hash table entries: 512
+NET: Registered protocol family 16
+bio: create slab &lt;bio-0&gt; at 0
+SCSI subsystem initialized
+usbcore: registered new interface driver usbfs
+usbcore: registered new interface driver hub
+usbcore: registered new device driver usb
+NET: Registered protocol family 2
+TCP established hash table entries: 512 (order: 0, 4096 bytes)
+TCP bind hash table entries: 512 (order: -1, 2048 bytes)
+TCP: Hash tables configured (established 512 bind 512)
+TCP: reno registered
+UDP hash table entries: 256 (order: 0, 4096 bytes)
+UDP-Lite hash table entries: 256 (order: 0, 4096 bytes)
+NET: Registered protocol family 1
+squashfs: version 4.0 (2009/01/31) Phillip Lougher
+fuse init (API version 7.22)
+msgmni has been set to 73
+io scheduler noop registered
+io scheduler deadline registered
+io scheduler cfq registered (default)
+Serial: 8250/16550 driver, 1 ports, IRQ sharing disabled
+serial8250: ttyS0 at MMIO 0x18002000 (irq = 8) is a 16550A
+Realtek GPIO Driver for Flash Reload Default
+SPI INIT
+ ------------------------- Force into Single IO Mode ------------------------ 
+|No chipID  Sft chipSize blkSize secSize pageSize sdCk opCk      chipName    |
+| 0 ef4017h  0h  800000h  10000h   1000h     100h   80    0            W25Q64|
+ ---------------------------------------------------------------------------- 
+SPI flash(W25Q64) was found at CS0, size 0x800000
+flash_bank_1: squashfs filesystem found at offset 0x200000
+7 dlinkpart partitions found on MTD device flash_bank_1
+Creating 7 MTD partitions on &quot;flash_bank_1&quot;:
+0x000000000000-0x000000010000 : &quot;boot&quot;
+0x000000010000-0x000000020000 : &quot;MAC&quot;
+0x000000020000-0x000000030000 : &quot;config&quot;
+0x000000030000-0x000000200000 : &quot;kernel&quot;
+0x000000200000-0x000000800000 : &quot;rootfs&quot;
+0x000000030000-0x000000800000 : &quot;Linux&quot;
+0x000000000000-0x000000800000 : &quot;ALL&quot;
+PPP generic driver version 2.4.2
+NET: Registered protocol family 24
+MPPE/MPPC encryption/compression module registered
+Realtek WLAN driver - version 1.7 (2015-10-30)(SVN:Unversioned symlink)
+DFS function - version 2.0.14
+Adaptivity function - version 9.3.4
+CFG1 
+98 - 25MHz Clock Source
+Find Port=1 Device:Vender ID=881210ec
+
+
+#######################################################
+SKB_BUF_SIZE=9240 MAX_SKB_NUM=768
+#######################################################
+
+[roam_nl_init:162] family no = 18
+[roam_nl_init:164] Module initialized.
+ROAM UP
+CFG0 
+98 - 25MHz Clock Source
+Find Port=0 Device:Vender ID=818b10ec
+MACHAL_version_init
+
+
+#######################################################
+SKB_BUF_SIZE=9240 MAX_SKB_NUM=768
+#######################################################
+
+ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+rtl819x-ehci rtl819x-ehci: Realtek rtl819x On-Chip EHCI Host Controller
+rtl819x-ehci rtl819x-ehci: new USB bus registered, assigned bus number 1
+rtl819x-ehci rtl819x-ehci: irq 10, io mem 0x18021000
+rtl819x-ehci rtl819x-ehci: USB 2.0 started, EHCI 1.00
+usb usb1: New USB device found, idVendor=1d6b, idProduct=0002
+usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+usb usb1: Product: Realtek rtl819x On-Chip EHCI Host Controller
+usb usb1: Manufacturer: Linux 3.10.90 ehci_hcd
+usb usb1: SerialNumber: rtl819x-ehci
+hub 1-0:1.0: USB hub found
+hub 1-0:1.0: 1 port detected
+ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+rtl819x-ohci rtl819x-ohci: Realtek rtl819x built-in OHCI controller
+rtl819x-ohci rtl819x-ohci: new USB bus registered, assigned bus number 2
+rtl819x-ohci rtl819x-ohci: irq 10, io mem 0x18020000
+usb usb2: New USB device found, idVendor=1d6b, idProduct=0001
+usb usb2: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+usb usb2: Product: Realtek rtl819x built-in OHCI controller
+usb usb2: Manufacturer: Linux 3.10.90 ohci_hcd
+usb usb2: SerialNumber: rtl819x-ohci
+hub 2-0:1.0: USB hub found
+hub 2-0:1.0: 1 port detected
+usbcore: registered new interface driver usb-storage
+-------8196D OTG init 
+dwc_otg: version 2.60a 22-NOV-2006
+ [S0] lmdev=834ee100 
+device_register :register pass
+=&gt;probe
+  [S2]  otg_dev=834df920
+----init hcd-----
+  [S3] hcd==834da800
+DWC_otg: Using DMA mode
+dwc_otg logicmodule: DWC OTG Controller
+dwc_otg logicmodule: new USB bus registered, assigned bus number 3
+dwc_otg logicmodule: irq 15, io mem 0xb8030000
+set OTG host to high speed !
+DWC_otg: Init: Port Power? op_state=1
+DWC_otg: Init: Power Port (0)
+usb usb3: New USB device found, idVendor=1d6b, idProduct=0002
+usb usb3: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+usb usb3: Product: DWC OTG Controller
+usb usb3: Manufacturer: Linux 3.10.90 dwc_otg_hcd
+usb usb3: SerialNumber: logicmodule
+hub 3-0:1.0: USB hub found
+hub 3-0:1.0: 1 port detected
+----enable irq----- 
+  [S1] dwc_otg_driver, lmdriver=8057add0 
+Netfilter messages via NETLINK v0.30.
+nf_conntrack version 0.5.0 (588 buckets, 2352 max)
+ctnetlink v0.93: registering with nfnetlink.
+ip_tables: (C) 2000-2006 Netfilter Core Team
+TCP: cubic registered
+NET: Registered protocol family 10
+ip6_tables: (C) 2000-2006 Netfilter Core Team
+NET: Registered protocol family 17
+Ebtables v2.0 registered
+l2tp_core: L2TP core driver, V2.0
+8021q: 802.1Q VLAN Support v1.8
+Realtek FastPath:v1.03
+nlmon: nlmon_init entry
+
+Probing RTL819X NIC-kenel stack size order[3]...
+  SoC: 8197C
+[rtl865x_adjustQueueLen:4335] memory: bb80457c,  value: fc00ff
+[rtl865x_adjustQueueLen:4335] memory: bb804580,  value: fc00ff
+[rtl865x_adjustQueueLen:4335] memory: bb804584,  value: fc00ff
+[rtl865x_adjustQueueLen:4335] memory: bb8045c4,  value: fc00ff
+[rtl865x_adjustQueueLen:4335] memory: bb8045c8,  value: fc00ff
+[rtl865x_adjustQueueLen:4335] memory: bb8045cc,  value: fc00ff
+Start to init 8367R
+End of L2 ASIC init
+eth0 added. vid=9 Member port 0x10f...
+eth1 added. vid=8 Member port 0x10...
+rtl819x_dlink Generic Netlink family is registered.
+VFS: Mounted root (squashfs filesystem) readonly on device 31:4.
+Freeing unused kernel memory: 184K (80582000 - 805b0000)
+D-link init started
+Jan  1 00:00:15 init[1]: Kernel threads-max value (147) is too small. Set it to 512.
+updateboot: bootloader up to date
+gpiom: module license 'Proprietary' taints kernel.
+Disabling lock debugging due to kernel taint
+gpiom: module starting ...
+gpiom: using profile DIR_825AC_G1A.
+gpiom: button support enabled.
+gpiom: led support enabled.
+init_pre_boot: -----&gt; OK.
+read_and_validate_conf - config: 0, res: 0
+read_and_validate_conf - config: 1, res: 0
+Lenght of avalible memory for title 142 bytes
+resident starting...
+opening lib3g...
+hlib3g = 646220
+Event pipe size is 4096 bytes
+Initializing device...
+
+Initializing /dev/mtd1 RLX...
+Intialize wifi calibration (-1)...
+MTD RLX data is latest!!!
+
+Jan  1 00:00:02 autoupdate[880]: Config reset
+
+Init netfilter
+nf_conntrack_rtsp v0.6.21 loading
+nf_nat_rtsp v0.6.21 loading
+Check SSID
+Do preinit ifaces
+mount: mounting none on /proc/bus/usb failed: No such file or directory
+Set mac bc:0f:9a:6b:5f:91 on iface eth0 - OK
+Set mac bc:0f:9a:6b:5f:90 on iface eth1 - OK
+IPv6: ADDRCONF(NETDEV_UP): eth1: link is not ready
+Jan  1 00:00:02 sched_set_task_activity[880]: Cannot open pipe
+Jan  1 00:00:02 sched_set_task_activity[880]: Cannot open pipe
+Jan  1 00:00:02 rlx_wifi_mibs[880]: Calibration values are valid, nothing to do!
+Jan  1 00:00:02 rlx_wifi_mibs[880]: error in [HW_WLAN0_TX_P-------&gt; Set MIB from /etc/Wireless/RTL8192CD.dat
+OWER_5G_HT40_1S_CFGFILE set_mib &quot;wds_enable=0&quot; failed 
+B] mib - writingCFGFILE set_mib &quot;wds_pure=0&quot; failed 
+ average
+Jan  CFGFILE set_mib &quot;wds_priority=1&quot; failed 
+1 00:00:02 rlx_wCFGFILE set_mib &quot;wds_encrypt=0&quot; failed 
+ifi_mibs[880]: SCFGFILE set_mib &quot;wds_num=0&quot; failed 
+ome calibrations&lt;------- Set MIB from /etc/Wireless/RTL8192CD.dat Success
+ are not valid, WlanSupportAbility = 0x1
+rewriting...!
+Jan  1 00:00:02 libshared rtl:start_wifi[880]: begin
+Jan  1 00:00:02 start_wifi[880]: start on br= br0
+Jan  1 00:00:02 config_ssid_params[880]: begin
+Jan  1 00:00:02 config_ssid_params[880]: ifname = wlan0
+Jan  1 00:00:02 config_ssid_params[880]: begin
+Jan  1 00:00:02 config_ssid_params[880]: ifname = wlan1
+[ODM_software_init] 
+
+
+************* Initialize MAC/PHY parameter *************
+[MAC_REG_8812_n]
+RL6286_MAC_PHY_Parameter_v041_201311270x0100x0c  // AFE power cut
+[PHY_REG_8812_n_hp]
+RL6286_MAC_PHY_Parameter_v042_20131128
+[PHY_REG_PG_8812]
+RL6286_MAC_PHY_Parameter_v026_20130314
+[AGC_TAB_8812_n_hp]
+RL6286_MAC_PHY_Parameter_v041_20131127
+[RadioA_8812_n_hp]
+RL6286_MAC_PHY_Parameter_v041_20131127//A MODE S0:5210
+[RadioB_8812_n_hp]
+RL6286_MAC_PHY_Parameter_v041_20131127//A MODE S0:5210 
+[PHY_ConfigTXPwrTrackingWithParaFile 4352]
+[REG_TXPWR_TRK_8812_hp]
+Jan  1 00:00:04 -------&gt; Set MIB from /etc/Wireless/RTL8192CD.dat
+execWPACommands[CFGFILE set_mib &quot;wds_enable=0&quot; failed 
+880]: auth daemoCFGFILE set_mib &quot;wds_pure=0&quot; failed 
+n isn't needed!CFGFILE set_mib &quot;wds_priority=1&quot; failed 
+
+
+CFGFILE set_mib &quot;wds_encrypt=0&quot; failed 
+CFGFILE set_mib &quot;wds_num=0&quot; failed 
+&lt;------- Set MIB from /etc/Wireless/RTL8192CD.dat Success
+WlanSupportAbility = 0x3
+[ODM_software_init] 
+clock 25MHz
+
+
+************* Initialize MAC/PHY parameter *************
+[MAC_REG_8192Emp]
+RTL8192E_MAC_PHY_Parameter_v016_MP_20130705//0x160x36  // SWR by Hillo
+[PHY_REG_8192Emp]
+RTL8192E_MAC_PHY_Parameter_v043_MP_20141229
+[PHY_REG_PG_8192Emp]
+RL6286_MAC_PHY_Parameter_v024_20130125
+[AGC_TAB_8192Emp]
+RTL8192E_MAC_PHY_Parameter_v043_MP_20141229
+RadioA_8192Emp
+RTL8192E_MAC_PHY_Parameter_v043_MP_201412290x7F0x00082  // for C cut POW_SYN
+[RadioB_8192Emp]
+RTL8192E_MAC_PHY_Parameter_v043_MP_201412290x7F0x00082  // for C cut POW_SYN
+[PHY_ConfigTXPwrTrackingWithParaFile 4352]
+[PHY_ConfigTXPwrTrackingWithParaFile 4422] read_bytes=2246
+[TxPowerTrack_AP]
+Jan  1 00:00:05 execWPACommands[880]: auth daemon isn't needed!
+
+Jan  1 00:00:05 start_wifi[880]: Starting iwcontrol...
+
+Register to wlan0
+Register to wlan1
+Do clear ifaces
+set mac bc:0f:9a:6b:5f:90 on usb0
+set mac bc:0f:9a:6b:5f:90 on unet0
+init_lan: iface = br0
+br0: No such device
+init ipfilter
+init vserver
+iwcontrol RegisterPID to (wlan0)
+iwcontrol RegisterPID to (wlan1)
+start urlfilter
+m
+unable to create recv socket
+LLmnr bindtodevice error: No such device
+cleanup pidfile /tmp/locdns.br0.pid
+init rlx linux vlans
+Add PERMIT ACL(br0) for CPU packets - OK
+Add TOCPU ACL(eth1) for DHCP packets - OK
+Add TOCPU ACL(br0) for DNS packets - OK
+d-link channel[1+2+3+4+5] = 2050
+d-link channel[2+3+4+5+6] = 2140
+d-link channel[3+4+5+6+7] = 2180
+d-link channel[4+5+6+7+8] = 2260
+d-link channel[5+6+7+8+9] = 2360
+d-link channel[6+7+8+9+10] = 2450
+d-link channel[7+8+9+10+11] = 2570
+d-link channel[8+9+10+11+12] = 2570
+d-link channel[9+10+11+12+13] = 2410
+d-link select channel = 1 + 5
+Add PERMIT ACL(br0) for CPU packets - OK
+Add TOCPU ACL(eth1) for DHCP packets - OK
+Add TOCPU ACL(br0) for DNS packets - OK
+device eth0.2 entered promiscuous mode
+device eth0 entered promiscuous mode
+device wlan1 entered promiscuous mode
+device wlan0 entered promiscuous mode
+br0: port 3(wlan0) entered forwarding state
+br0: port 3(wlan0) entered forwarding state
+br0: port 2(wlan1) entered forwarding state
+br0: port 2(wlan1) entered forwarding state
+br0: port 1(eth0.2) entered forwarding state
+br0: port 1(eth0.2) entered forwarding state
+br0: port 3(wlan0) entered forwarding state
+br0: port 2(wlan1) entered forwarding state
+br0: port 1(eth0.2) entered forwarding state
+LocDNS started: NetBIOS - ok, LLMNR - ok
+init Realtek HW_NAT
+init wans
+Intialize wan.....
+Set mac bc:0f:9a:6b:5f:90 on iface eth1 - OK
+SeIPv6: ADDRCONF(NETDEV_UP): eth1: link is not ready
+t mtu 1500 on iface eth1 - OK
+init macfilter
+start services
+init_sysusers...
+d-link channel[36+40+44+48] = 800
+d-link channel[52+56+60+64] = 120
+d-link select channel = 52 + 64
+d-link channel[52] = 120
+d-link channel[56] = 0
+d-link channel[60] = 0
+d-link channel[64] = 0
+d-link select main channel = 56
+d-link offset_2nd_chan = BELOW
+start tr069...
+init DOS filter
+LocDNS started: NetBIOS - ok, LLMNR - ok
+link watcher started
+Out init_device
+init_device: exited, status=0
+monitor task is initialized pid= 1083 
+Done.
+Welcome to
+     _______          ___     __  ____   _  _   ___
+    |  ___  \        |   |   |__||    \ | || | /  /
+    | |   | ||  ___  |   |__  __ |     \| || |/  /
+    | |___| || |___| |      ||  || |\     ||     \
+    |_______/        |______||__||_| \____||_|\___\
+
+                     = Building Networks for People =
+
+D-link init done
+
+
+BusyBox v1.26.2 (2020-05-21 14:56:42 MSK) built-in shell (ash)
+
+# Transmitter is enabled!</rich_text>
+	</node>
+	<node custom_icon_id="0" foreground="" is_bold="False" name="Reverse-Engineering for begineers" prog_lang="custom-colors" readonly="False" tags="" unique_id="7">
+		<rich_text link="webs https://yurichev.org/1564f46f1c207b2dbc84a2bd4a41ed4c/RE4B-EN.pdf" style="italic" weight="heavy">https://yurichev.org/1564f46f1c207b2dbc84a2bd4a41ed4c/RE4B-EN.pdf</rich_text>
+		<rich_text>
+
+
+</rich_text>
+		<node custom_icon_id="0" foreground="" is_bold="False" name="Tools" prog_lang="custom-colors" readonly="False" tags="" unique_id="20">
+			<rich_text>1. Binbloom - 
+
+
+command - binbloom -f firmware-path -b    (To find base address) 
+</rich_text>
+		</node>
+	</node>
+	<node custom_icon_id="0" foreground="" is_bold="False" name="FUZZING-Learning" prog_lang="custom-colors" readonly="False" tags="" unique_id="4">
+		<rich_text>Router Fuzzing Framework - RPFuzzer
+
+IOT fuzzing framework - IOTFuzzer
+Firm-AFL - Augmented Fuzzer for IOT
+ 
+Basic Fuzzing - Throw garbage at an application and see if you hit something
+
+cat /dev/urandom | convert -in -- -out data.png 
+
+Mutational fuzzer
+
+Mutate valid input
+  - by flipping bits
+  - relocate data
+  more effective than random 
+  may run same thing over and over again
+  
+ 
+ Grammar fuzzer
+ 
+ - Define rules for how the input should be changed
+ - Better control over input 
+ - Based on protocol etc 
+ 
+ Feedback-based fuzzers
+ 
+ - Application feedback - instrumentation/coverage data 
+ 
+most efficient as it tells time where it crashes  so we can then mutate the input there and try.
+It is slower but causes less repetation hence high effectiveness
+Best result can be got if we have source code
+
+</rich_text>
+		<node custom_icon_id="0" foreground="" is_bold="False" name="AFL" prog_lang="custom-colors" readonly="False" tags="" unique_id="12">
+			<rich_text>Author - Craig Young  Twitter - @CraigTweets
+IMP tools - </rich_text>
+			<rich_text link="webs https://github.com/jfoote/exploitable">https://github.com/jfoote/exploitable</rich_text>
+			<rich_text>
+
+# AFL-FUZZ
+
+# </rich_text>
+			<rich_text scale="h3" underline="single" weight="heavy">Installing AFL</rich_text>
+			<rich_text>
+
+Download - lcamtuf.coredump.cx/afl/releases/afl-latest.tgz
+
+        Extract - tar zxf afl-latest.tgz
+         
+            Build - make install
+
+# </rich_text>
+			<rich_text scale="h3" underline="single" weight="heavy">Get target to FUZZ </rich_text>
+			<rich_text>
+
+   apt-get source libtiff5
+   
+# </rich_text>
+			<rich_text scale="h3" underline="single" weight="heavy">Configure Source</rich_text>
+			<rich_text>
+
+   CC=afl-gcc CXX=afl-g++ ./configure -disable-shared
+   Note: should see afl-cc status messages when afl-gcc is tested
+
+# </rich_text>
+			<rich_text scale="h3" underline="single" weight="heavy">Basic Usage</rich_text>
+			<rich_text>
+
+</rich_text>
+			<rich_text weight="heavy">afl-fuzz -i /afl-path/testcases/images/tiff/ -o tiffdump/ -- ./tools/tiffdump @@</rich_text>
+			<rich_text>
+
+-i  : Test case input path
+-o : Path for output
+
+FUZZ target specified after ‘--’
+
+  @@ is replaced by the fuzzed input file
+
+afl-fuzz will notify of recommended config changes:
+     Updating core pattern
+     Disabling on-demand CPU frequency scaling
+     
+# </rich_text>
+			<rich_text scale="h3" underline="single" weight="heavy">Important Status Indicators when AFL is running</rich_text>
+			<rich_text scale="h3" underline="single"> </rich_text>
+			<rich_text>
+
+1. </rich_text>
+			<rich_text weight="heavy">Cycle</rich_text>
+			<rich_text> - Complete pass of all discovered test cases.
+2. </rich_text>
+			<rich_text weight="heavy">Paths</rich_text>
+			<rich_text> - Each test case represents a unique code path
+3. </rich_text>
+			<rich_text weight="heavy">Crashes</rich_text>
+			<rich_text> - Number of paths which led to a crash 
+4. </rich_text>
+			<rich_text weight="heavy">Hangs</rich_text>
+			<rich_text> - Number of unique paths exceeding the timeout
+5. </rich_text>
+			<rich_text weight="heavy">map coverage</rich_text>
+			<rich_text> -
+      - if </rich_text>
+			<rich_text weight="heavy">map-density </rich_text>
+			<rich_text>is under 200 then check instrumentation (stop fuzzing and check the metrics you have set)
+      - above 70% is bad for path detection! Refer to docs for </rich_text>
+			<rich_text weight="heavy">AFL_INST_RATIO</rich_text>
+			<rich_text>
+6. In </rich_text>
+			<rich_text weight="heavy">Path geometry</rich_text>
+			<rich_text> field-
+          </rich_text>
+			<rich_text weight="heavy">variable</rich_text>
+			<rich_text> - variable behavior may indicate uninitialized memory or race conditions (It means that when afl runs the same testcase twice, its not getting the same execution flow)
+          
+# </rich_text>
+			<rich_text scale="h3" underline="single" weight="heavy">Explanation of Output Directories</rich_text>
+			<rich_text>
+
+1. queue/
+            This is the synthesized corpus
+            Original files and test cases for each path
+            queue/.state/variable_behavior/ for test cases with variable paths
+2. crashes/
+            Unique test cases for each crashing exec flow
+3. hangs/
+            test cases for each path that exceeds timeout
+
+# </rich_text>
+			<rich_text scale="h3" underline="single" weight="heavy">Basic Blockers and Caveats </rich_text>
+			<rich_text>(Problems)
+
+</rich_text>
+			<rich_text weight="heavy">OOM Crashes</rich_text>
+			<rich_text> - afl-fuzz limits virtual memory; use -m flag to increase
+
+</rich_text>
+			<rich_text weight="heavy">Slow Binaries</rich_text>
+			<rich_text> - More execs/sec means faster results; lightweight targets are best
+
+</rich_text>
+			<rich_text weight="heavy">Big Test Corpus</rich_text>
+			<rich_text> - Bigger is not always better; start small for more focused results
+
+</rich_text>
+			<rich_text weight="heavy">Large Test Cases</rich_text>
+			<rich_text> - Finding a needle in a haystack is hard; afl-tmin helps (more on this later)
+
+# </rich_text>
+			<rich_text scale="h3" underline="single" weight="heavy">Example Building With afl-*</rich_text>
+			<rich_text>
+
+(Instrumenting an Ubuntu Package)
+
+apt-get source &lt;package&gt;      - Get the source code
+ 
+    apt-get build-dep &lt;package&gt;    - get the build dependencies
+    
+       vi &lt;package&gt;/debian/rules and add envs    
+       (e.g. ‘export CC=afl-gcc’, etc.)
+              
+               debuild - directory with binaries instrumented built the same as if they were built for the ubuntu package
+               
+# </rich_text>
+			<rich_text scale="h3" underline="single" weight="heavy">Parallel Fuzzing</rich_text>
+			<rich_text>
+
+1. More workers leads to more success
+         Typically 1 process per core works well (afl-gotcpu measures idle CPU)
+         Parallel fuzzing uses one “Master” along with one or more “Slave” nodes
+              Master : Performs deterministic steps (slower)
+              Slave : Performs random mutations (similar to -d)
+              
+2. afl-fuzz flags are roughly the same
+           -o &lt;dir&gt; indicates a sync directory; -M &lt;name&gt; or -S &lt;name&gt; indicate a worker name
+           Output goes into &lt;dir&gt;/&lt;name&gt;/
+           
+3. Don't worry about each status screen     
+           afl-whatsup &lt;sync_dir&gt; - Provides summaries of each fuzzer
+           Decide when to CTRL+C based on master node
+
+</rich_text>
+			<rich_text weight="heavy">afl-gotcpu</rich_text>
+			<rich_text>
+
+- More accurate CPU measurement than afl-fuzz UI
+- Uses getrusage() to determine time in afl-gotcpu busy loop
+
+# </rich_text>
+			<rich_text scale="h3" underline="single" weight="heavy">Parallel fuzzing across systems - (Distributed Fuzzing)</rich_text>
+			<rich_text>
+
+1. queues and stats shared via SSH
+2. No need to run multiple masters
+3. Examples: 
+    experimental/distributed/sync_script.sh
+    https://github.com/MartijnB/disfuzz-afl
+
+# </rich_text>
+			<rich_text scale="h2" underline="single" weight="heavy">LLVM Mode</rich_text>
+			<rich_text scale="h2" underline="single">** </rich_text>
+			<rich_text>
+
+1. Standard </rich_text>
+			<rich_text weight="heavy">afl-gcc/afl-clang</rich_text>
+			<rich_text> use </rich_text>
+			<rich_text weight="heavy">afl-as</rich_text>
+			<rich_text> to rewrite assembly
+2. The </rich_text>
+			<rich_text weight="heavy">afl-clang-fast</rich_text>
+			<rich_text>* binaries provide true compiler instrumentation - takes advantage of compiler optimizations
+3. Requires clang + llvm-config to make comppilers 
+        Export AFL_PATH when compiling a target.
+
+Mode 1 - </rich_text>
+			<rich_text underline="single">afl-clang-fast </rich_text>
+			<rich_text underline="single" weight="heavy">Deffered Instrumentation</rich_text>
+			<rich_text>
+
+4. Normal operation is to clone process before main()
+5. Best to start forkserver as late as possible
+       Add _AFL_INIT() after loading config or initializing parser
+6. Must be careful about starting too late
+          Not after access to fuzzed input, timer/socket/etc creation
+
+Mode 2 - </rich_text>
+			<rich_text underline="single">afl-clang-fast </rich_text>
+			<rich_text underline="single" weight="heavy">Persistent Mode</rich_text>
+			<rich_text underline="single"> (Ideal for stateless parsers)</rich_text>
+			<rich_text>  [fastest]
+
+7. Goal is to gain some benefits of in-process fuzzing
+8. Loop over target code without stask startup overhead
+       while(_AFL_LOOP(count)){
+        /* Read Input, Parse Fuzzed Data, Cleanup */       
+       }    
+       Too many loops may expose memory leaks 
+       Good starting point - 1000 iteration in loops
+                                        1 Million is good 
+
+
+</rich_text>
+			<rich_text scale="h3" weight="heavy">afl-tmin</rich_text>
+			<rich_text scale="h3"> - Remove redundant data without changing path</rich_text>
+			<rich_text>
+     - Big files reduce execs/sec
+     - less chance of hitting important bytes in long file
+
+</rich_text>
+			<rich_text scale="h3" weight="heavy">afl-cmin</rich_text>
+			<rich_text scale="h3"> : This tool is used to reduce the scope of our corpus</rich_text>
+			<rich_text>
+      - Iterates over input directory mapping paths
+      - Discard files with overlapping execution
+      - outputs functionally distinct test inputs       
+
+</rich_text>
+			<rich_text scale="h3" underline="single" weight="heavy">Dictionary Based Fuzzing</rich_text>
+			<rich_text scale="h3"> (feeding keywords to AFL)</rich_text>
+			<rich_text>
+
+            - Dictionaries provide magic numbers and syntax tokens to afl-fuzz
+            - Simple format is demonstrated in &lt;afl&gt;/testcases/_extras/*.dict
+            - Develop your own wuth format docs or dumping input strings
+                  Eg. - strings from datasheets etc 
+       </rich_text>
+			<rich_text weight="heavy"> Dictionary tokens save time for reaching features</rich_text>
+			<rich_text>
+
+# </rich_text>
+			<rich_text scale="h3" underline="single" weight="heavy">Removing Checksums</rich_text>
+			<rich_text>
+
+1. Checksums make fuzzing hard.
+2. Comment out checksum verification code
+     Example: &lt;afl&gt;/experimental/libpng_no_checksum
+  
+# </rich_text>
+			<rich_text scale="h3" underline="single" weight="heavy">Chaining AFL</rich_text>
+			<rich_text>
+FUZZ A &gt; EXPORT CORPUS &gt; FUZZ B
+
+
+Great option when 
+      1. A is fast and B is slow
+      2. A is open and B is closed
+
+
+# </rich_text>
+			<rich_text scale="h2" underline="single" weight="heavy">CRASH EXPLORATION</rich_text>
+			<rich_text>
+
+#</rich_text>
+			<rich_text scale="h3" weight="heavy">Assessing Crash Impact</rich_text>
+			<rich_text>
+
+1. With AFL
+    - Refer to non-crashing parent.
+    - Peruvian Rabbit Thing
+
+
+2. With Sanitizers
+        - Address Sanitizer
+        - Memory Sanitizer
+        Example - Valgrind 
+
+3. With The debugger
+        - triage_crashes.sh
+        - GDB ‘exploitable’ plugin
+
+#</rich_text>
+			<rich_text scale="h3" weight="heavy">Understanding What triggered the crash</rich_text>
+			<rich_text>
+
+1. File names for crash inputs tell a story
+     
+</rich_text>
+			<rich_text scale="h3">     </rich_text>
+			<rich_text scale="h3" weight="heavy"> id:000300,sig:11,src:001569,op:flip1,pos:16</rich_text>
+			<rich_text>
+      
+      sig:11 - SEGFAULT
+      src:001569 - PARENT PATH
+      op:flip1 - FUZZING STRATEGY
+      pos:16 - FUZZED BYTE(S)
+
+</rich_text>
+			<rich_text weight="heavy">For Root cause analysis :</rich_text>
+			<rich_text>
+
+  1. Confirm that the crash is reproducible outside of the fuzzer (esp. for signal 6)
+  2. Check format specs to determine significance of the fuzzed byte(s)
+  3. Use a file dumper for the fuzzed format to identify changed field. eg - jpeg-dump, tiff-dump
+  4. Review parent test case as a non-crashing reference point
+
+
+# </rich_text>
+			<rich_text scale="h3" underline="single" weight="heavy">Crash Exploration through Instrumentation</rich_text>
+			<rich_text>
+
+</rich_text>
+			<rich_text weight="heavy">&quot;Peruvian Rabbit Thing&quot;</rich_text>
+			<rich_text>
+
+</rich_text>
+			<rich_text weight="heavy">afl-fuzz -C -i crash_dir ...</rich_text>
+			<rich_text>
+
+The -C options takes afl-fuzz to the mode
+   - Fuzz crashing inputs
+   - Non-crashers discarded
+   - Unique paths saved
+
+# </rich_text>
+			<rich_text scale="h3" underline="single" weight="heavy">Sanitizers</rich_text>
+			<rich_text>
+
+1. </rich_text>
+			<rich_text weight="heavy">Address Sanitizers (ASAN)</rich_text>
+			<rich_text> identifies invalid memory access
+       Use After Free, Heap/Stack/Global-buffer overflow
+2. </rich_text>
+			<rich_text weight="heavy">Memory Sanitizer (MSAN)</rich_text>
+			<rich_text> identifies use of uninitialized memory
+3. Included with current clang and gcc releases
+       -CFLAGS=&quot;-fsanitize=address&quot; | CFLAGS=&quot;-fsanitize=memory&quot;
+
+</rich_text>
+			<rich_text weight="heavy">What are these sanitizers  (https://github.com/google/sanitizers)</rich_text>
+			<rich_text>
+    - Think compile-time valgrind
+    - Program is stopped on various memory handling bugs
+    - This allows us to recognize even very subtle faults
+ 
+ </rich_text>
+			<rich_text weight="heavy">Why not use sanitizers all the time ??</rich_text>
+			<rich_text>
+     - Slows down target by about 2x
+     - Higher memory envelope (prevents 64-bit afl-fuzz)
+
+# </rich_text>
+			<rich_text scale="h3" underline="single" weight="heavy">Using GDB</rich_text>
+			<rich_text>
+
+</rich_text>
+			<rich_text weight="heavy">&lt;afl&gt;experimental/crash_triage/triage_crashes.sh</rich_text>
+			<rich_text>
+   - Dump registers, backtrace, and disassembly around PC for crash dir
+   - Defaults to using stdin, minor change to use file input
+
+</rich_text>
+			<rich_text weight="heavy">GDB</rich_text>
+			<rich_text> </rich_text>
+			<rich_text weight="heavy">Exploitable Plugin: </rich_text>
+			<rich_text link="webs https://github.com/jfoote/exploitable" weight="heavy">https://github.com/jfoote/exploitable</rich_text>
+			<rich_text>  (Easy to use and setup no need to look for disassembly etc) 
+     - Originally a CERT triage tool
+     - Classifies bugs based on exploitability
+     - Not 100% accurate but usually good enough 
+
+# </rich_text>
+			<rich_text scale="h2" underline="single" weight="heavy">Triage Method</rich_text>
+			<rich_text>
+
+</rich_text>
+			<rich_text weight="heavy">for D in $(find &lt;sync&gt; -name crashes -type d); do for F in $(1s $DIR/id*)</rich_text>
+			<rich_text>
+
+     - gdb -batch -ex “r $F&quot; -ex “exploitable” $target &gt; $F.crash
+     - $target_ASAN $F&gt;$F.asan
+
+</rich_text>
+			<rich_text weight="heavy">grep -inRE “overflow|[^_]exploitable|probably_exploitable”*</rich_text>
+			<rich_text>
+     - quichky identify the most interesting crashes
+     
+Modify </rich_text>
+			<rich_text weight="heavy">triage_crashes.sh</rich_text>
+			<rich_text> to use ASAN + exploitable is another option
+
+
+Example : 
+
+ Use of AFL to bypass Browser ASLR
+ 
+ Load IFRAME content &gt; Create an HTML canvas &gt; Render each graphic 50 times &gt; Compare image data for changes &gt; Variations in rendering indicate uninit variables
+
+
+</rich_text>
+			<rich_text scale="h3" underline="single" weight="heavy">WORKFLOW</rich_text>
+			<rich_text>
+
+1. Compile the binary to be tested with AFL
+2. Find a test Corpus
+3. Run the fuzzer
+4. Triage the findings
+
+
+</rich_text>
+			<rich_text scale="h3" underline="single" weight="heavy">Mutation Strategies - </rich_text>
+			<rich_text>
+
+1. Bit flipping - Flip random bits or sets of bits in the input
+2. Arithmetic - Walk the 8/16/32/64 bit values and add or subtract
+3. Byte flipping - Reverse Byte ordering ... eg - 0xABCD - 0xCDAB
+4. Interesting Values - 0s, 1s , high-order bits, and maximum values
+</rich_text>
+		</node>
+	</node>
+	<node custom_icon_id="0" foreground="" is_bold="False" name="Form-bruteforce" prog_lang="custom-colors" readonly="False" tags="" unique_id="5">
+		<rich_text>COOKIE VALUES
+
+After correct username and password : ----------------------sessionid=625558ec; auth=ok; xxid=1297087858; sys_UserName=Admin; token_sys=887077888
+
+After wrong username and password : -----------------------sessionid=3eb21819; auth=nok; xxid=329234789; sys_UserName=Admin; token_sys=887077888
+
+variables = sessionid , xxid , auth </rich_text>
+	</node>
+	<node custom_icon_id="0" foreground="" is_bold="False" name="DDOS" prog_lang="custom-colors" readonly="False" tags="" unique_id="3">
+		<rich_text>Botnet Creation
+
+Mirai Botnet
+1. worm
+
+
+DDNS - Duck DNS
+
+</rich_text>
+		<rich_text link="webs https://www.duckdns.org/">https://www.duckdns.org/</rich_text>
+		<rich_text>
+
+</rich_text>
+	</node>
+	<node custom_icon_id="0" foreground="" is_bold="False" name="Dlink- DES3200" prog_lang="custom-colors" readonly="False" tags="" unique_id="10">
+		<rich_text>Info - 
+
+RTOS based firmware
+
+eCos RTOS string
+
+VxWorks  WIND kernel version &quot;2.11&quot;</rich_text>
+	</node>
+	<node custom_icon_id="0" foreground="#00ff00" is_bold="True" name="October-findings" prog_lang="custom-colors" readonly="False" tags="" unique_id="16">
+		<rich_text>Mikrotik study
+
+- Understanding npk file formatting
+- Extraction of npk files (successful)
+- Ongoing Study on packing of npk files
+- Studying on Priviledge escallation and bypassing mikrotik prompt to get root shell
+
+
+Link that has code injection flaw - </rich_text>
+		<rich_text link="webs http://45.118.205.222/webfig/roteros-9501b99f4532.jg">http://45.118.205.222/webfig/roteros-9501b99f4532.jg</rich_text>
+		<rich_text>
+Position - Referer
+exploit -  </rich_text>
+		<rich_text weight="heavy">Shellshock</rich_text>
+		<rich_text> - () { :;}; /bin/sleep 0
+
+Understanding Commix and working on finding vulnerability using Commix tool </rich_text>
+		<node custom_icon_id="0" foreground="" is_bold="False" name="advanced-sc" prog_lang="custom-colors" readonly="False" tags="" unique_id="17">
+			<rich_text>#! /bin/sh
+
+TMPDIR=/tmp/foo$$
+
+trap “rm -rf $TMPDIR;exit” 0 1 2 3 15
+
+mkdir $TMPDIR || exit 1
+
+scan unseen &gt; $TMPDIR/$USER 2&gt;/dev/null
+
+if [ -s $TMPDIR/$USER ]
+
+then 
+            NUM=`wc -l $TMPDIR/$USER | awk '{print $1}`
+            if [ $NUM = 1 ]
+            then
+                          echo “You have 1 new message.”
+            else
+                          echo “You have $NUM new messages.”
+            fi
+            cat $TMPDIR/$USER | awk 'BEGIN { FS = “&lt;&lt;”}
+                                                                  { print $1 }'
+                                                                  
+else 
+           echo “You have no new mail.... ”
+
+fi
+                         
+            </rich_text>
+		</node>
+	</node>
+	<node custom_icon_id="0" foreground="#00ff00" is_bold="True" name="November Findings" prog_lang="custom-colors" readonly="False" tags="" unique_id="21">
+		<rich_text>
+
+</rich_text>
+		<rich_text weight="heavy">Winbox</rich_text>
+		<rich_text> to manage the router , </rich_text>
+		<rich_text weight="heavy">Dude</rich_text>
+		<rich_text> to monitor your network and </rich_text>
+		<rich_text weight="heavy">Netinstall</rich_text>
+		<rich_text> for recovery and re-installation
+
+</rich_text>
+		<rich_text weight="heavy">Routerboard</rich_text>
+		<rich_text> - 
+</rich_text>
+		<rich_text weight="heavy">RouterBOOT</rich_text>
+		<rich_text> - Secondary Bootloader 
+
+1. Got the Mikrotik RB951Ui-2HnD router delivered
+2. Observations locally
+     i. Unable to Downgrade (minimum downgradable to 6.44) 
+    ii. Unable to Downgrade below the shipped version (Older package already provided ) 
+3. When multiple images are kept only the one with the newest release will be installed other packages will be omitted (Successfully upgraded to 6.46.8 from 6.45)
+4. To downgrade all other lower packages will be omitted (successfully downgraded to 6.44.5)
+5. </rich_text>
+		<node custom_icon_id="0" foreground="" is_bold="False" name="Important projects" prog_lang="custom-colors" readonly="False" tags="" unique_id="22">
+			<rich_text>There are other researchers doing neat RouterOS work. Here are a few I know of:
+• </rich_text>
+			<rich_text link="webs https://github.com/0ki/mikrotik-tools">https://github.com/0ki/mikrotik-tools</rich_text>
+			<rich_text>
+• </rich_text>
+			<rich_text link="webs https://github.com/BigNerd95/Chimay-Red">https://github.com/BigNerd95/Chimay-Red</rich_text>
+			<rich_text>
+• </rich_text>
+			<rich_text link="webs https://github.com/BigNerd95/Chimay-Blue">https://github.com/BigNerd95/Chimay-Blue</rich_text>
+			<rich_text>
+• </rich_text>
+			<rich_text link="webs https://github.com/rsa9000/npk-tools">https://github.com/rsa9000/npk-tools</rich_text>
+			<rich_text>
+</rich_text>
+		</node>
+		<node custom_icon_id="0" foreground="" is_bold="True" name="router details" prog_lang="custom-colors" readonly="False" tags="" unique_id="23">
+			<rich_text>routerboard: yes
+     model: 951Ui-2HnD
+     revision: r2
+     serial-number: B8570BF4328C
+     firmware-type: ar9344
+     factory-firmware: 6.44
+     current-firmware: 6.45.1
+     upgrade-firmware: 6.44.5</rich_text>
+		</node>
+		<node custom_icon_id="0" foreground="" is_bold="False" name="Downgrade Router" prog_lang="custom-colors" readonly="False" tags="" unique_id="24">
+			<rich_text>Install dude in mikrotik router
+
+</rich_text>
+		</node>
+		<node custom_icon_id="0" foreground="" is_bold="False" name="Routeros-6.47.4-vs-6.39-comparison" prog_lang="custom-colors" readonly="False" tags="" unique_id="25">
+			<rich_text>Path - </rich_text>
+			<rich_text weight="heavy">bndl/security/home/web/webfig/</rich_text>
+			<rich_text>
+
+
+file - secure-01815644c415.jg.gz     - Present in 6.47.4  but not in 6.39.3
+
+file - secure-772b3b028ba8.jg.gz     - Present in 6.39.3 but not in 6.47.4</rich_text>
+		</node>
+	</node>
+	<node custom_icon_id="0" foreground="" is_bold="True" name="Courses IOT" prog_lang="custom-colors" readonly="False" tags="" unique_id="19">
+		<rich_text></rich_text>
+	</node>
+</cherrytree>
