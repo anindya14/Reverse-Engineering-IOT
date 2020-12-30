@@ -1,0 +1,5 @@
+1. Upgrade the router with the encrypt to unencrypt file.
+2. upgrade the router with sdk-master firmware.
+3. Enable telnet from any external host in the Advanced > Remote Access > Add rule to add Telnet service
+Use cat /dev/urandom | mtd_write mtd0 - 0 32768 to brick the device and reboot.
+
